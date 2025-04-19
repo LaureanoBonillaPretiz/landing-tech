@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # 👈 Necesario para que git push funcione
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -27,6 +29,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  
-          folder: dist/landing-tech  
+          branch: gh-pages
+          folder: dist/landing-tech
           token: ${{ secrets.GITHUB_TOKEN }}
