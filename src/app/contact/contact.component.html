@@ -1,1 +1,50 @@
-<p>contact works!</p>
+<div class="contact">
+    <h2>Contacto</h2>
+  
+    <p class="intro">
+      Mi nombre es <strong>Laureano Bonilla Pretiz</strong> y estoy aquí para ayudarte a llevar tu negocio al siguiente nivel.
+    </p>
+  
+    <a class="whatsapp-button"
+       href="https://wa.me/50687772993" target="_blank">
+      📲 Escribime por WhatsApp
+    </a>
+  
+    <!--div class="form-wrapper">
+      <h3>¿Preferís dejarme un mensaje?</h3>
+      <form id="contact-form" action="https://formspree.io/f/mblgvvbo" method="POST">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo electrónico" required>
+        <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <div id="thank-you-message" style="display:none;">
+        ¡Gracias por tu mensaje! Te responderé pronto.
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var form = e.target;
+            var data = new FormData(form);
+            fetch('https://formspree.io/f/mblgvvbo', {
+              method: 'POST',
+              body: data,
+              headers: {
+                'Accept': 'application/json'
+              }
+            }).then(function(response) {
+              if (response.ok) {
+                document.getElementById('thank-you-message').style.display = 'block';
+                form.reset();
+              } else {
+                alert('Hubo un problema al enviar el formulario.');
+              }
+            });
+          });
+        });
+      </script>
+      
+    </div-->
+  </div>
+  
