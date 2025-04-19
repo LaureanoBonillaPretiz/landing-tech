@@ -15,7 +15,7 @@ jobs:
         with:
           fetch-depth: 0  # 👈 Necesario para que git push funcione
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: '18'
