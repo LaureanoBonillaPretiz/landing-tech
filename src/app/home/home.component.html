@@ -1,19 +1,9 @@
 <section class="hero">
-    <div class="hero-content">
-      <h1>Haz crecer tu negocio con soluciones tecnológicas a la medida</h1>
-      <p>
-        Optimiza procesos, vende más y automatiza sin esfuerzo. Creamos tecnología que trabaja por vos.
-      </p>
-      <a routerLink="/servicios" class="primary-button">Ver servicios</a>
-    </div>
-  </section>
-  <section id="servicios">
-    <app-services></app-services>
-  </section>
-  <section id="nosotros">
-    <app-about></app-about>
-  </section>
-  <section id="contacto">
-    <app-contact></app-contact>
-  </section>
-  
+  <div class="hero-content">
+    <h1>Haz crecer tu negocio con soluciones tecnológicas a la medida</h1>
+    <p>
+      Optimiza procesos, vende más y automatiza sin esfuerzo. Creamos tecnología que trabaja por vos.
+    </p>
+    <button class="primary-button" (click)="goToServicios()">Ver servicios</button>
+  </div>
+</section>
