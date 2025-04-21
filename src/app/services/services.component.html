@@ -1,12 +1,11 @@
 <section class="services" #animatedSection>
-    <h2>Servicios</h2>
-    <div class="service-list">
-      <!-- Ejemplo de tarjeta de servicio -->
-      <div class="service-card">
-        <h3>Páginas Web Profesionales</h3>
-        <p>Diseño moderno, conexión con redes y WhatsApp, compatible con todos los dispositivos.</p>
-      </div>
-      <!-- Repetí para otras categorías -->
+  <h2>Servicios</h2>
+  <div class="service-list">
+    <div class="service-card" *ngFor="let service of services">
+      <div class="service-icon">{{ service.icon }}</div>
+      <h3>{{ service.title }}</h3>
+      <p>{{ service.description }}</p>
+      <button class="see-more">Ver más</button>
     </div>
-  </section>
-  
+  </div>
+</section>
